@@ -101,6 +101,11 @@ Header
 .title-bar .title-bar-right a:hover {
 	opacity: 1.0;
 }
+/*
+=================
+Window
+=================
+*/
 .header-container .window h2{
 	margin-top: 50px;
 	content: url("assets/viking_ship_background_medium.jpg");
@@ -108,11 +113,6 @@ Header
 	margin-right: 0;
 	margin-left: 0;
 }
-/*
-=================
-Window
-=================
-*/
 
 /*
 =================
@@ -173,9 +173,9 @@ Banner
 	font-weight: normal;
 	padding: 5px;
 	background-color: #bf2825;
-	border-radius: 2px;
-	margin-top: -152px;
-	margin-left: 192px;
+	border-radius: 2 0 2 2;
+	margin-top: -237px;
+	margin-left: 198px;
 	z-index: 10;
 	float: right;
 }
@@ -192,6 +192,11 @@ Banner
 .button p{
 	color: black;
 }
+/*
+=======================
+Page
+=======================
+*/
 .page {
 	text-align: center;
 	margin: 20px 0 35px 0;
@@ -224,20 +229,20 @@ Footer
 	background-color: #333333;
 	height: 150px;
 }
-.contact {
-	text-align: center;
-}
 .contact h4{
 	color: #F6B26B;
 	padding-top: 20px;
 	padding-bottom: 15px;
+	text-align: center;
 }
 .phone	{
 	height: 30px;
 	padding-bottom: 15px;
+	margin-left: 400px;
 }
 .email {
 	height: 30px;
+	margin-left: 400px;
 }
 .phone p {
 	color: white;
