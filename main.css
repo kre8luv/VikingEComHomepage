@@ -61,54 +61,75 @@ Header
 ======================
 */
 .header-container .title-bar {
-	height: 40px
+	display: inline-block;
+	height: 40px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 40px;
+	width: 100%;
+	display: inline-block;
+	line-height: 50px;
+	vertical-align: middle;
+	background-color: white;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+	z-index: 40;
 }
 .title-bar .title-bar-left{
-	line-height: 40px;
-	vertical-align: middle;
-	display: inline-block;
+	float: left;
+	margin-left: 75px;
+	font-size: 25px
 }
 .title-bar-right {
-	position: relative;
+	margin-right: 75px;
+	float: right;
 }
 .title-bar-right img{
 	width: 30px;
 	height: 30px;
+	margin-right: 15px;
 	line-height: 40px;
 	vertical-align: middle;
-	margin-right: 15px;
-	display: inline-block;
-	float: right;
+	
 }
-.title-bar .title-bar-right{
-	display: inline-block;
-	float: right;
-	line-height: 35px;
-	vertical-align: middle;
-	font-size: 16px;
-	margin-right: 75px;
+.title-bar .title-bar-right a{
+	text-decoration: none;
+	opacity: 0.5;
+	color: black;
+}
+.title-bar .title-bar-right a:hover {
+	opacity: 1.0;
 }
 .header-container .window h2{
+	margin-top: 50px;
 	content: url("assets/viking_ship_background_medium.jpg");
 	width: 100%;
 	margin-right: 0;
 	margin-left: 0;
 }
-.window h2{
-	color: red;
-	font-size: 48px;
-}
+/*
+=================
+Window
+=================
+*/
+
+/*
+=================
+Banner
+=================
+*/
 .banner {
 	background-color: #333333;
-	width: 100%;
 	height: 70px;
 }
 .banner h3{
 	color: white;
-	font-size: 30px;
+	font-size: 2em;
 	text-align: center;
 	line-height: 60px;
 	vertical-align: middle;
+	width: 100%;
 }
 .products-container .text {
 	width: 100%;
@@ -120,8 +141,82 @@ Header
 	font-style: italic;
 	font-weight: lighter;
 }
+.photos {
+	text-align: center;
+}
+.photo-row {
+	display: inline-block;
+}
+.photo-container {
+	height: 440px;
+	width: 250px;
+	background-color: #333333;
+	float: left;
+	margin: 15px 8px 0 8px;
+}
+.photo-container p{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 8px 0 13px 0;
+}
+.photo-container img {
+	display: block;
+	margin:	auto;
+	width: 95%;
+	z-index: -1;
+}
 
+.photo-container .price {
+	position: absolute;
+	color: white;
+	font-weight: normal;
+	padding: 5px;
+	background-color: #bf2825;
+	border-radius: 2px;
+	margin-top: -152px;
+	margin-left: 192px;
+	z-index: 10;
+	float: right;
+}
 
+.button {
+	background-color: #ffe36a;
+	height: 30px;
+	width: 125px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 8px;
+	border-radius: 2px;
+}
+.button p{
+	color: black;
+}
+.page {
+	text-align: center;
+	margin: 20px 0 35px 0;
+}
+.page a{
+	margin: 0 5px 0 5px;
+}
+.page a:nth-child(2){
+	text-decoration: none;
+}
+.page a:nth-child(1){
+	margin-right: 25px;
+}
+.page a:nth-child(9){
+	margin-left: 25px;
+}
+#dots {
+	text-decoration: none;
+}
+.page a:nth-child(3){
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
 /*
 ======================
 Footer
@@ -172,6 +267,11 @@ Footer
 	line-height: 30px;
 	vertical-align: middle;
 	margin-right: 10px;
+}
+.foot-container .subfoot-container{
+	width: 100%
+	height: 15px;
+	color: white;
 }
 
 
