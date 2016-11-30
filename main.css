@@ -148,13 +148,13 @@ Banner
 	display: inline-block;
 }
 .photo-container {
-	height: 440px;
+	height: 320px;
 	width: 250px;
 	background-color: #333333;
 	float: left;
 	margin: 15px 8px 0 8px;
 }
-.photo-container p{
+.photo-container p {
 	color: white;
 	text-align: center;
 	font-weight: bold;
@@ -198,6 +198,10 @@ Banner
 }
 .page a{
 	margin: 0 5px 0 5px;
+	text-decoration: none;
+}
+.page a:hover{
+	text-decoration: underline;
 }
 .page a:nth-child(2){
 	text-decoration: none;
@@ -210,12 +214,6 @@ Banner
 }
 #dots {
 	text-decoration: none;
-}
-.page a:nth-child(3){
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
 }
 /*
 ======================
@@ -231,11 +229,12 @@ Footer
 }
 .contact h4{
 	color: #F6B26B;
-	padding-top: 15px;
+	padding-top: 20px;
 	padding-bottom: 15px;
 }
 .phone	{
 	height: 30px;
+	padding-bottom: 15px;
 }
 .email {
 	height: 30px;
@@ -247,13 +246,7 @@ Footer
 	vertical-align: middle;
 	font-size: 14px;
 }
-.phone a {
-	color: white;
-	display: inline-block;
-	line-height: 30px;
-	vertical-align: middle;
-	font-size: 14px;
-}
+
 .phone img{
 	height: 20px;
 	width: 20px;
@@ -268,10 +261,17 @@ Footer
 	vertical-align: middle;
 	margin-right: 10px;
 }
+.email a{
+	text-decoration: none;
+	color: white;
+}
+.email a:hover{
+	text-decoration: underline;
+}
 .foot-container .subfoot-container{
 	width: 100%
-	height: 15px;
-	color: white;
+	height: 10px;
+	background-color: white;
 }
 
 
